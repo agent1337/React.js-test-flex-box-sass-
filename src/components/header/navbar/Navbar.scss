@@ -1,0 +1,37 @@
+.navbar {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  max-height: calc(100vh - 2rem);
+  height: 78px;
+  width: 70px;
+  left: 0;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  margin: 1rem;
+  padding: 0;
+  transition: 0s;
+
+  &.open {
+    height: 100%;
+    transition: 0s;
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .navbar {
+    position: relative;
+    max-height: calc(100vh - 2rem);
+    width: 70px;
+    left: 0;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    margin: 1rem;
+    height: 100%;
+    transition: 0.7s;
+
+    &.open {
+      width: 260px;
+      transition: 0.7s;
+    }
+  }
+}

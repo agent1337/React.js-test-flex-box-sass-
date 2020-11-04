@@ -1,0 +1,55 @@
+.logo {
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  & > * {
+    margin: 0.5rem;
+  }
+
+  .logo-title {
+    position: relative;
+    overflow: hidden;
+
+    .logo-title--text {
+      position: absolute;
+      margin-left: -260px;
+      transition: 0.5s;
+
+      &.open {
+        margin: 0;
+        position: inherit;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .logo {
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & > * {
+      margin: 0.5rem;
+    }
+
+    .logo-title {
+      position: relative;
+      overflow: hidden;
+
+      .logo-title--text {
+        position: absolute;
+        margin-left: -260px;
+        transition: 0.5s;
+
+        &.open {
+          margin: 0;
+          position: inherit;
+        }
+      }
+    }
+  }
+}
